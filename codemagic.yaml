@@ -2,7 +2,7 @@ workflows:
   android:
     name: Android Build
     instance_type: mac_mini  # Corrected instance type
-    script:
+    commands:
       - yarn install
       - npx react-native run-android --variant=release
     artifacts:

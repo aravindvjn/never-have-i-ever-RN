@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Never Have I Ever",
-    "slug": "Never Have I Ever",
+    "slug": "never-have-i-ever",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/applogo.png",
@@ -9,26 +9,31 @@
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "black"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.dark.neverhaveiever", 
-      "buildNumber": "1", 
-      "icon": "./assets/ios-icon.png"  
+      "bundleIdentifier": "com.dark.neverhaveiever",
+      "buildNumber": "1",
+      "icon": "./assets/applogo.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/applogo.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.dark.neverhaveiever",  
-      "versionCode": 1, 
-      "icon": "./assets/android-icon.png"  
+      "package": "com.dark.neverhaveiever",
+      "versionCode": 1,
+      "icon": "./assets/applogo.png"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/applogo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "99eda404-c7ff-42e4-b1dd-16428e654580"
+      }
     }
   }
 }

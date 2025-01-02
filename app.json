@@ -1,41 +1,34 @@
 {
   "expo": {
-    "name": "NeverHaveIEverRN",
-    "slug": "NeverHaveIEverRN",
+    "name": "Never Have I Ever",
+    "slug": "Never Have I Ever",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "icon": "./assets/applogo.png",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dark.neverhaveiever", 
+      "buildNumber": "1", 
+      "icon": "./assets/ios-icon.png"  
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dark.neverhaveiever",  
+      "versionCode": 1, 
+      "icon": "./assets/android-icon.png"  
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
+      "favicon": "./assets/favicon.png"
     }
   }
 }

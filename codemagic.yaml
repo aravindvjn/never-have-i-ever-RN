@@ -1,7 +1,7 @@
 workflows:
   android:
     name: Android Build
-    instance_type: macos
+    instance_type: mac_mini  # Corrected instance type
     script:
       - yarn install
       - npx react-native run-android --variant=release

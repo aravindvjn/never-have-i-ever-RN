@@ -44,7 +44,7 @@ jobs:
           ./gradlew assembleRelease  # Build the APK in release mode
 
       - name: Upload APK as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: app-release.apk
           path: android/app/build/outputs/apk/release/app-release.apk

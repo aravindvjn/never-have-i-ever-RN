@@ -1,0 +1,9 @@
+workflows:
+  android:
+    name: Android Build
+    instance_type: macos
+    script:
+      - yarn install
+      - npx react-native run-android --variant=release
+    artifacts:
+      - build/app/outputs/apk/release/app-release.apk

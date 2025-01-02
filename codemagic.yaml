@@ -1,9 +1,15 @@
 workflows:
   android:
     name: Android Build
-    instance_type: mac_mini  # Corrected instance type
-    commands:
-      - yarn install
-      - npx react-native run-android --variant=release
+    instance_type: mac_mini  # Choose appropriate instance type
+    environment:
+      flutter: stable
+    scripts:
+      - name: Install dependencies
+        script: |
+          yarn install
+      - name: Build APK
+        script: |
+          npx react-native run-android --variant=release
     artifacts:
       - build/app/outputs/apk/release/app-release.apk

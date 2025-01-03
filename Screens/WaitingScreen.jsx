@@ -59,7 +59,6 @@ const WaitingScreen = ({
         {allPlayers?.length === 1 && (
           <Button
             style={{ backgroundColor: "grey" }}
-            onPress={handleStartGame}
             text="Start Now"
           />
         )}
